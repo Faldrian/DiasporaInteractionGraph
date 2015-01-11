@@ -39,6 +39,7 @@ function loadInteractions(posturl) {
     guid: parts[2]
   })
     .done(function(data) {
+      console.log(data); // DEBUG
       runPlugins(data);
     })
     .fail(function() {
