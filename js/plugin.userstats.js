@@ -24,9 +24,9 @@ analysePlugins.push({
 
     // convert object to array
     var authorArr = [];
-    _.each(authors, function(value, key) {
-      authorArr.push(value);
-    });
+    for (var author in authors) {
+      authorArr.push(authors[author]);
+    }
 
     // sort authors by number of comments
     authorArr.sort(function(a, b) {
