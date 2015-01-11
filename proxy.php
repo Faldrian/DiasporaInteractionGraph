@@ -6,7 +6,7 @@
  */
 
 if(isset($_GET['host']) && isset($_GET['guid'])) {
-  header('content-type', 'application/json; charset=utf-8');
+  header('Content-Type: application/json; charset=utf-8');
 
   // Construct interactions-url
   $host = $_GET['host'];

@@ -47,6 +47,9 @@ function loadInteractions(posturl) {
 }
 
 function runPlugins(interactions) {
+  // clear previous results
+  $('#pluginArea').empty();
+
   analysePlugins.forEach(function(plugin) {
     // create target element
     var elem = $('<div class="pluginContainer"><h3>'+plugin.title+'</h3><div class="content"></div></div>');
